@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="diaz hilary">
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<div>
+		<table>
+			<tr>
+				<td colspan="5" rowspan="2" id="display">0</td>
+			</tr>
+
+			<tr></tr>
+
+			<tr>
+				<td>CLR</td>
+				<td id="inverter">INV</td>
+				<td>DEG</td>
+				<td>%</td>
+				<td id="del">
+					<svg width="50px" height="23px">
+						<line x1="23" y1="12" x2="30" y2="18" stroke="rgba(200, 200, 200, 0.7)" stroke-width="2" />
+						<line x1="23" y1="18" x2="30" y2="12" stroke="rgba(200, 200, 200, 0.7)" stroke-width="2" />
+						<polyline points="19 9, 13 15, 19 22, 37 22, 37 9, 19 9" stroke="rgba(200, 200, 200, 0.7)" stroke-width="2" stroke-linejoin="miter" fill="none" />
+						DEL
+					</svg>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="inverted" style="font-size: 0.9em;" id="sqrt">√</td>
+				<td>π</td>
+				<td>e</td>
+				<td>^</td>
+				<td>÷</td>
+			</tr>
+
+			<tr>
+				<td class="inverted">sin</td>
+				<td>!</td>
+				<td>(</td>
+				<td>)</td>
+				<td>×</td>
+			</tr>
+
+			<tr>
+				<td class="inverted">cos</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>-</td>
+			</tr>
+
+			<tr>
+				<td class="inverted">tan</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>+</td>
+			</tr>
+
+			<tr>
+				<td class="inverted">In</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td rowspan="2" onclick="compute()">=</td>
+			</tr>
+
+			<tr>
+				<td class="inverted">log</td>
+				<td colspan="2">0</td>
+				<td>.</td>
+			</tr>
+		</table>
+	</div>
+	<script src="master.js"></script>
+	<script src="Math.js"></script>
+</body>
+</html>

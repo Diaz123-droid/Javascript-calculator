@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+body{
+	background: #444;
+}
+
+div{
+  width: 380px;
+  height: 530px;
+  margin: 30px auto;
+  background: #242424;
+}
+
+table{
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+
+table, tr, td{
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-collapse: collapse;
+}
+
+td{
+  text-align: center;
+  color: rgba(200, 200, 200, 0.7);
+  transition: background 0.3s ease-in-out;
+}
+
+#display{
+  background: #c5c5c5;
+  font-size: 2em;
+  text-align: right;
+  padding-right: 5px;
+  overflow: scroll;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+  border: solid 0.5px #191;
+}
+
+#display:hover{
+  background: #eee;
+}
+
+td:hover{
+  background: #3a3a3a;
+}
+
